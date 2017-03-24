@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" />
+	<link rel="shortcut icon" href="./favicon.ico">
+</head>
+
+<body>
+	<div class="body">
+		<div class="content">
+			<header>
+
+				<div class="container">
+					<div class="header">
+						<div class="header__item">
+							<img src="./images/logo.png" alt="привод инжиниринг" title="привод инжиниринг" />
+						</div>
+						<div class="header__item">
+								<div class="contacts">
+									109316, г. Москва, Волгоградский проспект, дом 42 корпус 13<br />+7 (495) 786-04-05, info@privod-en.ru
+								</div>
+								<span>
+									Общество с ограниченной ответственностью «ПРИВОД-ИНЖИНИРИНГ» <br />ООО «ПРИВОД-ИНЖИНИРИНГ» <br />ОГРН 1177746178851<br />НН/КПП 9723012300/772301001<br />ОКПО 06819936
+								</span>
+						</div>
+
+					</div>
+				</div>
+
+			</header>
+			<!-- HEADER end-->
+
+			<!-- CENTER -->
+			<div class="center">
+				<div class="container">
+					<div class="present">
+						<div class="present__item">
+							<div class="present__title">главные <span>предложения</span></div>
+							<div class="pazl">
+								<%	for(var i = 1; i<5; i++){ %>
+									<img src="./images/top-slide<%=i %>.png" alt="привод инжиниринг" class="pazl__item" />
+								<%	}	%>
+							</div>
+						</div>
+						<div class="present__item">
+							<div class="slider-wrapp">
+								<div class="slider">
+									<div class="slider__item">
+										<div class="h1">монтаж<br />и внедрение</div>
+									</div>
+									<div class="slider__item">
+										<div class="h2">Реализация проектов «Под&nbsp;ключ»</div>
+										<div class="columns">
+											<div class="columns__item">
+												<ul>
+													<li>Обследование</li>
+													<li>Технический и Энерго аудит</li>
+													<li>Функции генерального подрядчика</li>
+													<li>Проектирование (все разделы),<br />в т.ч. прохождение экспертизы</li>
+													<li>Комплектование объекта</li>
+												</ul>
+											</div>
+											<div class="columns__item">
+												<ul>
+													<li>Строительно-монтажные работы</li>
+													<li>Программирование</li>
+													<li>Пусконаладочные работы</li>
+													<li>Сдача в эксплуатацию</li>
+													<li>Сервисное сопровождение</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-dots"></div>
+							</div>
+							<div class="nfo">сайт находится в разработке</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="sert">
+					<%	for(var i = 1; i < 11; i++){ %>
+						<a href="./images/sert<%=i %>.JPG" class="fancybox sert__item" rel="group">
+							<img src="./images/sert<%=i %>_small.JPG" alt="привод инжиниринг" />
+						</a>
+					<%	}	%>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+		</footer>
+	</div>
+</body>
+
+</html>

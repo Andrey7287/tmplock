@@ -1,0 +1,24 @@
+/*Common*/
+@import "common/variables";
+@import "common/mixins";
+@import "common/common";
+
+/*Tools*/
+@import "tools/sprite";
+
+/*Modules*/
+@import "../node_modules/modularized-normalize-scss/normalize";
+@import "../node_modules/slick-carousel/slick/slick";
+@import "../node_modules/fancybox/dist/scss/jquery.fancybox";
+
+/*Components*/
+@import "components/slider";
+
+
+@import "header";
+@import "main";
+
+
+
+
+

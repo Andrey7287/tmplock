@@ -1,0 +1,68 @@
+
+.slider-wrapp {
+	position: relative;
+	max-width: 466px;
+	margin: 0 auto;
+	color: #fff;
+	ul {
+		padding-left: 18px;
+		margin-top: 25px;
+		li {
+			@include font(16,22,$font: $roboto-c);
+			margin-bottom: 18px;
+		}
+	}
+	.h1, .h2 {
+		text-transform: uppercase;
+	}
+}
+/**** SLIDER ****/
+.slider {
+	&__item {
+		position: relative;
+	}
+}
+
+/**** DOTS ****/
+.slider-dots {
+	position: absolute;
+	bottom: -60px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.slick-dots {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	li {
+		display: inline-block;
+		margin: 0 3px;
+		button {
+			text-indent: -9999px;
+			border: 0;
+			padding: 0;
+			background-color: transparent;
+			@include sprite($dot);
+		}
+		&.slick-active {
+			button {
+				@include sprite($dot_act);
+			}
+		}
+		&:hover {
+			button {
+				@include sprite($dot_act);
+			}
+		}
+	}
+
+}
+
+.columns {
+	@include layout(table);
+	&__item {
+		vertical-align: top;
+	}
+}
